@@ -5,9 +5,13 @@ feature_image: "assets/uvengine_label_fondo.png"
 excerpt: "UVengine is a universal variability resolution engine for [UVL](https://universal-variability-language.github.io/) with [Jinja templates](https://jinja.palletsprojects.com/en/stable/)."
 ---
 
+<head>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
 *UVengine* is a universal variability resolution engine for [UVL](https://universal-variability-language.github.io/) models and text-based artifacts with [Jinja templates](https://jinja.palletsprojects.com/en/stable/).
 
-{% include button.html text="Try it online 🏷️" link="webapp/" color="#11b786" %} {% include button.html text="View it on GitHub" icon="github" link="https://github.com/UVengine/uvengine" color="#555555" %}
+{% include button.html text="Try it online ⚙️" link="webapp/" color="#11b786" %} {% include button.html text="View it on GitHub" icon="github" link="https://github.com/UVengine/uvengine" color="#555555" %}
 
 ### Overview
 
@@ -28,16 +32,16 @@ Inputs and outputs of UVengine.
 ### Publications using the UVengine approach
 
 - José Miguel Horcas, Mercedes Amor, Lidia Fuentes. *The Kubernetes variability model*. 19th International Working Conference on Variability Modelling of Software-Intensive Systems (VaMoS). 2025. DOI: <a href="https://doi.org/10.1145/3715340.3715440">https://doi.org/10.1145/3715340.3715440</a>
-<button type="button" onclick="copyBibTeX(bibtexEntry4)">Copy BibTex 🗎</button>
+<button type="button" class="bibtex-button" onclick="copyBibTeX(bibtexEntry4)">Copy BibTex 🗎</button>
 
 - David Romero Organvidez, José Miguel Horcas, José A. Galindo, David Benavides. *Data visualization guidance using a software product line approach*. Journal of Systems and Software (JSS). 2024. DOI: <a href="https://doi.org/10.1016/j.jss.2024.112029">https://doi.org/10.1016/j.jss.2024.112029</a>
-<button type="button" onclick="copyBibTeX(bibtexEntry3)">Copy BibTex 🗎</button>
+<button type="button" class="bibtex-button" onclick="copyBibTeX(bibtexEntry3)">Copy BibTex 🗎</button>
 
 - David Romero Organvidez, David Benavides, José Miguel Horcas, María Teresa Gómez López. *Variability in data transformation: towards data migration product lines*. 18th International Working Conference on Variability Modelling of Software-Intensive Systems (VaMoS). 2024. DOI: <a href="https://doi.org/10.1145/3634713.3634724">https://doi.org/10.1145/3634713.3634724</a>
-<button type="button" onclick="copyBibTeX(bibtexEntry2)">Copy BibTex 🗎</button>
+<button type="button" class="bibtex-button" onclick="copyBibTeX(bibtexEntry2)">Copy BibTex 🗎</button>
 
 - José Miguel Horcas, José A. Galindo, David Benavides. *Variability in data visualization: a software product line approach*. 26th ACM International Systems and Software Product Line Conference (SPLC). 2022. DOI: <a href="https://doi.org/10.1145/3546932.3546993">https://doi.org/10.1145/3546932.3546993</a>
-<button type="button" onclick="copyBibTeX(bibtexEntry1)">Copy BibTex 🗎</button>
+<button type="button" class="bibtex-button" onclick="copyBibTeX(bibtexEntry1)">Copy BibTex 🗎</button>
 
 
 ### Entities involved
