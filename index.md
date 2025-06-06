@@ -1,23 +1,21 @@
 ---
-title: UVengine
-feature_text: |
-  ## UVengine
-  Universal Variability resolution engine for [UVL](https://universal-variability-language.github.io/) with [Jinja templates](https://jinja.palletsprojects.com/en/stable/).
-feature_image: "assets/logos/UVengine_logo2.jpeg"
+title: 
+feature_text:
+feature_image: "assets/uvengine_label_fondo.png"
 excerpt: "UVengine is a universal variability resolution engine for [UVL](https://universal-variability-language.github.io/) with [Jinja templates](https://jinja.palletsprojects.com/en/stable/)."
 ---
 
-*UVengine* is a universal variability resolution engine for [UVL](https://universal-variability-language.github.io/) with [Jinja templates](https://jinja.palletsprojects.com/en/stable/).
+*UVengine* is a universal variability resolution engine for [UVL](https://universal-variability-language.github.io/) models and text-based artifacts with [Jinja templates](https://jinja.palletsprojects.com/en/stable/).
 
-{% include button.html text="Try it online 🏷️" link="https://fmfactlabel.adabyron.uma.es/" color="#11b786" %} {% include button.html text="View it on GitHub" icon="github" link="https://github.com/UVengine/uvengine" color="#555555" %}
+{% include button.html text="Try it online 🏷️" link="webapp/" color="#11b786" %} {% include button.html text="View it on GitHub" icon="github" link="https://github.com/UVengine/uvengine" color="#555555" %}
 
-## Overview
+### Overview
 
 Inputs and outputs of UVengine.
 
 <img src="assets/uvengine_overview.png" alt="UVengine overview"/>
 
-## Features
+### Features
 
 - A variability resolution engine for [UVL](https://universal-variability-language.github.io/) models.
 - Support all [language level extensions of UVL](https://doi.org/10.1016/j.jss.2024.112326).
@@ -27,26 +25,29 @@ Inputs and outputs of UVengine.
 - Easy integration with existing tools of the [UVL ecosystem]() such as [UVLS](https://marketplace.visualstudio.com/items?itemName=caradhras.uvls-code) and [flamapy](https://www.flamapy.org/).
 
 
-## Publications using the UVengine approach
+### Publications using the UVengine approach
 
 - José Miguel Horcas, Mercedes Amor, Lidia Fuentes. *The Kubernetes variability model*. 19th International Working Conference on Variability Modelling of Software-Intensive Systems (VaMoS). 2025. DOI: <a href="https://doi.org/10.1145/3715340.3715440">https://doi.org/10.1145/3715340.3715440</a>
-<button type="button" onclick="copyBibTeX(bibtexEntry3)">Copy BibTex 🗎</button>
+<button type="button" onclick="copyBibTeX(bibtexEntry4)">Copy BibTex 🗎</button>
 
 - David Romero Organvidez, José Miguel Horcas, José A. Galindo, David Benavides. *Data visualization guidance using a software product line approach*. Journal of Systems and Software (JSS). 2024. DOI: <a href="https://doi.org/10.1016/j.jss.2024.112029">https://doi.org/10.1016/j.jss.2024.112029</a>
+<button type="button" onclick="copyBibTeX(bibtexEntry3)">Copy BibTex 🗎</button>
+
+- David Romero Organvidez, David Benavides, José Miguel Horcas, María Teresa Gómez López. *Variability in data transformation: towards data migration product lines*. 18th International Working Conference on Variability Modelling of Software-Intensive Systems (VaMoS). 2024. DOI: <a href="https://doi.org/10.1145/3634713.3634724">https://doi.org/10.1145/3634713.3634724</a>
 <button type="button" onclick="copyBibTeX(bibtexEntry2)">Copy BibTex 🗎</button>
 
 - José Miguel Horcas, José A. Galindo, David Benavides. *Variability in data visualization: a software product line approach*. 26th ACM International Systems and Software Product Line Conference (SPLC). 2022. DOI: <a href="https://doi.org/10.1145/3546932.3546993">https://doi.org/10.1145/3546932.3546993</a>
 <button type="button" onclick="copyBibTeX(bibtexEntry1)">Copy BibTex 🗎</button>
 
 
-## Entities involved
+### Entities involved
 
 <a href="https://www.uma.es/"><img src="assets/uma.svg" alt="Universidad de Málaga" width="200"/></a>
 
 <script>
  // Store the BibTeX entry in a JavaScript variable
   {% raw %}
-  const bibtexEntry2 = `
+  const bibtexEntry3 = `
 @article{RomeroOrganvidez2024_DataVisualizationSPL,
   author       = {David Romero{-}Organvidez and Jos{\'{e}} Miguel Horcas and Jos{\'{e}} A. Galindo and David Benavides},
   title        = {Data visualization guidance using a software product line approach},
@@ -63,7 +64,7 @@ Inputs and outputs of UVengine.
   {% endraw %}
 
     {% raw %}
-  const bibtexEntry3 = `
+  const bibtexEntry4 = `
 @inproceedings{Horcas2025_KubernetesFM,
   author       = {Jos{\'{e}} Miguel Horcas and
                   Mercedes Amor Pinilla and
@@ -81,6 +82,21 @@ Inputs and outputs of UVengine.
   doi          = {10.1145/3715340.3715440},
   timestamp    = {Fri, 30 May 2025 11:26:47 +0200},
   biburl       = {https://dblp.org/rec/conf/vamos/HorcasPF25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}`;
+  {% endraw %}
+
+    {% raw %}
+  const bibtexEntry2 = `
+@inproceedings{RomeroOrganvidez2024_DataTransformationVariability,
+  author       = {David Romero{-}Organvidez and David Benavides and Jos{\'{e}} Miguel Horcas and Mar{\'{\i}}a Teresa G{\'{o}}mez{-}L{\'{o}}pez},
+  title        = {Variability in data transformation: towards data migration product lines},
+  booktitle    = {18th International Working Conference on Variability Modelling of Software-Intensive Systems ({VaMoS})},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3634713.3634724},
+  doi          = {10.1145/3634713.3634724},
+  timestamp    = {Fri, 26 Jan 2024 00:00:00 +0100},
+  biburl       = {https://dblp.org/rec/conf/vamos/Romero-Organvidez24.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }`;
   {% endraw %}

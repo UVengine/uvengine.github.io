@@ -30,4 +30,8 @@
 <url>
 <loc>http://localhost:4000/blog/page2/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/webapp/</loc>
+<lastmod>2025-06-06T23:48:26+01:00</lastmod>
+</url>
 </urlset>

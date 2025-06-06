@@ -44,13 +44,6 @@
   },
   
   {
-    "title": "UVengine",
-    "excerpt": "UVengine is a universal variability resolution engine for UVL with Jinja templates.\n",
-    "content": "UVengine is a universal variability resolution engine for UVL with Jinja templates.\n\nTry it online 🏷️\n View it on GitHub  github\n\n\nOverview\n\nInputs and outputs of UVengine.\n\n\n\nFeatures\n\n\n  A variability resolution engine for UVL models.\n  Support all language level extensions of UVL.\n  Feature traceability between UVL models and implementation artifacts.\n  Language independence for any text-based artifacts using Jinja templates.\n  Composition and annotation-based mechanisms to implement variability at different degrees of granularity.\n  Easy integration with existing tools of the UVL ecosystem such as UVLS and flamapy.\n\n\nPublications using the UVengine approach\n\n\n  \n    José Miguel Horcas, Mercedes Amor, Lidia Fuentes. The Kubernetes variability model. 19th International Working Conference on Variability Modelling of Software-Intensive Systems (VaMoS). 2025. DOI: https://doi.org/10.1145/3715340.3715440\nCopy BibTex 🗎\n  \n  \n    David Romero Organvidez, José Miguel Horcas, José A. Galindo, David Benavides. Data visualization guidance using a software product line approach. Journal of Systems and Software (JSS). 2024. DOI: https://doi.org/10.1016/j.jss.2024.112029\nCopy BibTex 🗎\n  \n  \n    José Miguel Horcas, José A. Galindo, David Benavides. Variability in data visualization: a software product line approach. 26th ACM International Systems and Software Product Line Conference (SPLC). 2022. DOI: https://doi.org/10.1145/3546932.3546993\nCopy BibTex 🗎\n  \n\n\nEntities involved\n\n\n\n\n\n",
-    "url": "/"
-  },
-  
-  {
     "title": "Search",
     "excerpt": "Search for a page or post you’re looking for\n",
     "content": "{% include site-search.html %}\n",
