@@ -250,3 +250,13 @@ window.addEventListener("load", async () => {
   // await loadUVEngineToFS();
   document.getElementById("output").innerText = "Pyodide loaded. UVEngine ready.";
 });
+
+function downloadUseCase() {
+  const select = document.getElementById("use-case-select");
+  const selectedValue = select.value;
+  if (selectedValue) {
+    window.location.href = selectedValue;
+  } else {
+    alert("Please select a use case to download.");
+  }
+}

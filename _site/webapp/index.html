@@ -3,31 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <title>UVengine web interface</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script defer src="main.js"></script>
 </head>
 <body>
   <h1>UVengine web interface</h1>
-  
-  <form id="upload-form">
-    <label>Feature Model (.uvl):</label><br/>
-    <input type="file" id="feature-model" accept=".uvl" required /><br/><br/>
-    
-    <label>Configurations (.json file or ZIP with .json files):</label><br/>
-    <input type="file" id="configs" accept=".json,.zip" required multiple /><br/><br/>
-    
-    <label>Templates (.jinja file or ZIP with .jinja files):</label><br/>
-    <input type="file" id="templates" accept=".jinja,.zip" required multiple /><br/>
-    <small>Enter main template file name (e.g. main_template.jinja):</small><br/>
-    <input type="text" id="main-template-name" placeholder="main_template.jinja" required /><br/><br/>
-    
-    <label>Mapping file (optional, .csv):</label><br/>
-    <input type="file" id="mapping" accept=".csv" /><br/><br/>
-    
-    <button type="submit">Run UVEngine</button>
-  </form>
-  
+
+  <div class="container">
+    <div class="image-panel">
+      <img src="uvengine_overview.png" alt="UVengine"/>
+    </div>
+
+    <div class="download-section">
+      <label for="use-case-select">Download examples:</label><br/>
+      <select id="use-case-select">
+        <option value="" disabled selected>Select example</option>
+        <option value="cases/icecream.zip">Ice cream</option>
+        <option value="cases/docker.zip">Docker compose</option>
+      </select>
+      <button type="button" onclick="downloadUseCase()">Download</button>
+    </div>
+
+    <form id="upload-form">
+      <label>Feature Model (.uvl):</label><br/>
+      <input type="file" id="feature-model" accept=".uvl" required /><br/><br/>
+
+      <label>Configurations (.json file or ZIP with .json files):</label><br/>
+      <input type="file" id="configs" accept=".json,.zip" required multiple /><br/><br/>
+
+      <label>Templates (.jinja file or ZIP with .jinja files):</label><br/>
+      <input type="file" id="templates" accept=".jinja,.zip" required multiple /><br/>
+      <small>Enter main template file name (e.g. main_template.jinja):</small><br/>
+      <input type="text" id="main-template-name" placeholder="main_template.jinja" required /><br/><br/>
+
+      <label>Mapping file (optional, .csv):</label><br/>
+      <input type="file" id="mapping" accept=".csv" /><br/><br/>
+
+      <button type="submit">Run UVEngine</button>
+    </form>
+  </div>
+
   <div id="output"></div>
 </body>
-</html>
